@@ -23,6 +23,7 @@ const showProducts = (products) => {
         start += ('<i class="far fa-star"></i>')
       }
     }
+    
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("product");
@@ -33,7 +34,7 @@ const showProducts = (products) => {
       <h3 class='title'>${product.title.slice(0,50)}</h3>
       <p class='m-0 p-1'><b>Category: <span class='category'>${product.category}</span></b></p>
       <p class='m-0 p-0'><b>Ratings:<span class='text-warning'>${start}</span> ${product.rating.rate}</b></p>
-      <p><b>Total Review: <i class="fas fa-user-tie"></i> ${product.rating.count}</b></p>
+      <p class='mb-1'><b>Total Review: <i class="fas fa-user-tie"></i> ${product.rating.count}</b></p>
       <h2>Price: $ ${product.price}</h2>
       <button onclick="addToCart(${product.price})" id="addToCart-btn" class="buy-now btn       btn-success">Add to cart</button>
       <button id="details-btn" class="btn details">Details</button></div>
@@ -41,7 +42,7 @@ const showProducts = (products) => {
     document.getElementById("all-products").appendChild(div);
   }
 };
-//<i class="fas fa-star-half-alt"></i>
+
 let count = 0;
 const addToCart = (price) => {
   count = count + 1;
