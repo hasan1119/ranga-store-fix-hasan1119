@@ -22,6 +22,7 @@ header p {
   font-family: 'Lobster', cursive;
 }
 
+
 .search-field {
   border: none;
   outline: none;
@@ -50,24 +51,28 @@ header p {
 }
 
 .single-product {
-  padding: 15px 10px;
   transition: 0.5s;
-  background: #fff !important;
-  margin: 20px 5px;
-  min-height: 500px;
+  width: 90%;
   border: 1px solid #fff;
 }
 
-.single-product:hover {
-  box-shadow: 4px 4px 7px gray;
+.product-container {
+  min-height: 500px;
+  background: #fff !important;
+  margin: 20px 10px;
+  transition: .5s;
+  padding: 15px 10px;
+
+}
+
+.product-container:hover {
   border: 1px solid cyan;
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   border-radius: 5px;
 
 }
-.table{
-  
-}
+
+
 .product-image {
   width: 150px;
   height: 150px;
@@ -76,7 +81,7 @@ header p {
 
 .cart {
   margin: 20px 5px;
-  width: 350px;
+  width: 380px;
   background: #fff;
   padding: 10px;
   margin-right: 30px;
